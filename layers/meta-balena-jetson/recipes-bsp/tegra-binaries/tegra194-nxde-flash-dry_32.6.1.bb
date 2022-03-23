@@ -27,7 +27,7 @@ SRC_URI = " \
 "
 
 FLASHXML = "resinOS-flash194_nxde.xml"
-DTBNAME = "tegra194-p3668-all-p3509-0000"
+DTBNAME = "tegra194-p3668-all-p3509-0000-imx477"
 DTBNAME:photon-xavier-nx = "tegra194-xavier-nx-cti-NGX003"
 DTBNAME_cnx100-xavier-nx = "tegra194-xavier-nx-cnx100"
 KERNEL_DEVICETREE = "${DEPLOY_DIR_IMAGE}/${DTBNAME}.dtb"

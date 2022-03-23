@@ -32,6 +32,14 @@ SRC_URI:append:jetson-xavier-nx-devkit-seeed-2mic-hat = " \
     file://tegra194-p3668-all-p3509-0000-seeed-2mic-hat.dtb \
 "
 
+SRC_URI:append:jetson-xavier-nx-devkit = " \
+    file://tegra194-p3668-all-p3509-0000-imx477.dtb \
+"
+
+SRC_URI:append:jetson-xavier-nx-devkit-emmc = " \
+    file://tegra194-p3668-all-p3509-0000-imx477.dtb \
+"
+
 SRC_URI:append:astro-tx2 = " \
     file://tegra186-tx2-cti-ASG001-revG+.dtb \
 "
@@ -333,6 +341,14 @@ do_deploy:append:n310-tx2() {
 
 do_deploy:append:jetson-xavier-nx-devkit-seeed-2mic-hat() {
     cp ${WORKDIR}/tegra194-p3668-all-p3509-0000-seeed-2mic-hat.dtb "${DEPLOYDIR}"
+}
+
+do_deploy:append:jetson-xavier-nx-devkit() {
+    cp ${WORKDIR}/tegra194-p3668-all-p3509-0000-imx477.dtb "${DEPLOYDIR}"
+}
+
+do_deploy:append:jetson-xavier-nx-devkit-emmc() {
+    cp ${WORKDIR}/tegra194-p3668-all-p3509-0000-imx477.dtb "${DEPLOYDIR}"
 }
 
 do_deploy:append:blackboard-tx2() {
